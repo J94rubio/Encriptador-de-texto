@@ -1,4 +1,5 @@
 .logo{
+    color: aliceblue;
     padding: 2% 3%;
     position: static;
     left: 36.67%;
@@ -19,30 +20,30 @@ body{
     position: relative;
     padding-bottom: 5em;
     min-height: 100vh;
-    background: linear-gradient(lightblue, blue);
+    background-image: url(imagenes/background2.jpg);
 }
 
 .mensaje{
     display: flex;
     position: absolute;
     width: 680px;
-    height: 288px;
+    height: 310px;
     left: 2%;
     top: 20%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
+    font-weight: bold;
     line-height: 150%;
     text-transform: lowercase;
     text-align: center;
     border: none;
     border-radius: 15px;
-    background: linear-gradient(lightblue, blue);
+    opacity: .5;
 }
 
 .resultado{
-    background: linear-gradient(blue, lightblue);
     position: absolute;
     width: 400px;
     height: 85%;
@@ -55,8 +56,9 @@ body{
     font-size: 32px;
     line-height: 150%;
     border-radius: 15px;
-    border: none;
+    border: 5px;
     text-transform: lowercase;
+    opacity: .5;
 }
 
 .encriptar{
@@ -69,23 +71,24 @@ body{
     width: 10%;
     height: 67px;
     left: 15%;
-    top: 65%;
+    top: 50%;
     border: none;
     border-radius: 24px;
     transition: 1s;
     font-weight: bold;
+    opacity: .9;
 }
 
 .encriptar:hover{
-    background: lightblue;
+    background: #00bcd4;
     transform: scale(1.2);
 }
 
 .texto_guia{
     display: flex;
     position: absolute;
-    color: darkgrey;
-    top: 58%;
+    color: black;
+    top: 60%;
     left: 4%;
 }
 
@@ -97,15 +100,16 @@ body{
     width: 10%;
     height: 67px;
     left: 30%;
-    top: 65%;
+    top: 50%;
     border: none;
     border-radius: 24px;
     font-weight: bold;
-    transition: 1s;
+    transition: 1s; 
+    opacity: .9;
 }
 
 .desencriptar:hover{
-    background: lightblue;
+    background: #00bcd4;
     transform: scale(1.2);
 }
 
@@ -122,11 +126,11 @@ body{
     border-radius: 24px;
     font-weight: bold;
     transition: 1s;
-    
+    opacity: .9;
 }
 
 .copiar:hover{
-    background: lightblue;
+    background: #00bcd4;
     transform: scale(1.2);
 }
 
@@ -139,14 +143,16 @@ body{
     height: 8%;
     left: 83%;
     top: 570px;
-    border: none;
+    border: 5px;
+    border-color: #ffc600;
     border-radius: 24px;
     font-weight: bold;
     transition: 1s;
+    opacity: .9;
 }
 
 .escuchar:hover{
-    background: lightblue;
+    background: #00bcd4;
     transform: scale(1.2);
 }
 
@@ -162,6 +168,8 @@ footer{
     width: 100%;
     height: 0%;
     font-weight: bold;
+    font-size: 30px;
+    color: white;
 }
 
 @media screen and (max-width:480px) {
@@ -172,7 +180,7 @@ footer{
         position: static;
         margin: auto;
     }
-    .mensaje, .resultado, .mensa{
+    .mensaje, .resultado{
         left: 2%;
         margin: 10px;
     }
